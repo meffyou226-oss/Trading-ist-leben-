@@ -1,9 +1,11 @@
 {
-  "rt": 0.65,
-  "ct": 0.1,
-  "tt": 0.55,
-  "sl": 2.0,
-  "tp": 2.5,
-  "risk": 0.01,
-  "vsk": true
+  "rt": 0.72,
+  "ct": 0.08,
+  "tt": 0.50,
+  "sl": 1.5,
+  "tp": 3.0,
+  "risk": 0.02,
+  "vsk": true,
+  "trailing": false,
+  "session_filter": "no_asian"
 }

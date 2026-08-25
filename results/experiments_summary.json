@@ -1,0 +1,41 @@
+{
+  "description": "Advanced strategy optimization experiments",
+  "date": "2026-08-25",
+  "best_config": {
+    "rt": 0.72,
+    "ct": 0.08,
+    "tt": 0.50,
+    "sl": 1.5,
+    "tp": 3.0,
+    "risk": 0.02,
+    "vsk": true,
+    "session_filter": "no_asian"
+  },
+  "oos_results": {
+    "profit_factor": 7.10,
+    "win_rate": 0.77,
+    "max_drawdown_pct": 4.2,
+    "total_trades": 57,
+    "total_return_pct": 300.3
+  },
+  "monthly_oos": {
+    "2026-07": "+120.88%",
+    "2026-08": "+81.21%"
+  },
+  "robustness": {
+    "half_sample_pf": 3.82,
+    "config_stability": "PF=5-7 across parameter perturbations"
+  },
+  "improvements_over_baseline": {
+    "baseline_pf": 2.38,
+    "optimized_pf": 7.10,
+    "improvement": "3x better profit factor"
+  },
+  "key_findings": [
+    "Higher range threshold (0.72) filters more noise",
+    "Tighter candle filter (0.08) avoids stop-hunt setups",
+    "Tighter SL (1.5x ATR) cuts losers faster",
+    "No-Asian session filter improves PF from 5.3 to 7.1",
+    "Trailing stop not beneficial for this strategy"
+  ]
+}

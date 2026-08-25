@@ -1,0 +1,22 @@
+{
+  "cfg": {
+    "rt": 0.72,
+    "ct": 0.08,
+    "sl": 1.5,
+    "tp": 3.0,
+    "tt": 0.5,
+    "risk": 0.02,
+    "vsk": true,
+    "trailing": false,
+    "session_filter": "no_asian",
+    "trail_atr": false
+  },
+  "ret": 300.2601282962421,
+  "pf": 7.10189881980632,
+  "wr": 0.7719298245614035,
+  "mdd": 4.220225119972829,
+  "n": 57,
+  "sharpe": 266.7243353272283,
+  "trail": false,
+  "sf": "no_asian"
+}

@@ -1,0 +1,32 @@
+{
+  "target": "2-10 trades/day",
+  "best_config": {
+    "rt": 0.65,
+    "ct": 0.10,
+    "sl": 1.0,
+    "tp": 2.5,
+    "tt": 0.50,
+    "risk": 0.01,
+    "session_filter": "no_asian"
+  },
+  "oos_performance": {
+    "profit_factor": 2.79,
+    "win_rate": 0.55,
+    "max_drawdown_pct": 5.2,
+    "total_trades": 164,
+    "trades_per_day": 3.0,
+    "total_return_pct": 272.0
+  },
+  "alternative_high_frequency": {
+    "rt": 0.65,
+    "ct": 0.20,
+    "sl": 1.5,
+    "tp": 2.5,
+    "tt": 0.50,
+    "risk": 0.01,
+    "session_filter": "all",
+    "oos_pf": 2.67,
+    "oos_trades_per_day": 7.1,
+    "oos_return_pct": 475.0
+  }
+}

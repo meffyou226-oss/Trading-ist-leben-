@@ -1,11 +1,11 @@
 {
-  "rt": 0.72,
-  "ct": 0.08,
+  "description": "Frequency-optimized: 2-10 trades/day",
+  "rt": 0.65,
+  "ct": 0.10,
   "tt": 0.50,
-  "sl": 1.5,
-  "tp": 3.0,
-  "risk": 0.02,
+  "sl": 1.0,
+  "tp": 2.5,
+  "risk": 0.01,
   "vsk": true,
-  "trailing": false,
   "session_filter": "no_asian"
 }

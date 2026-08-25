@@ -1,0 +1,46 @@
+feature_pattern,category,description,lookahead_safety
+ret_N,Price Structure,N-bar return (%),Safe: uses close[0] vs close[-N]
+body_pct,Price Structure,Body as % of range,Safe: uses current OHLC only
+upper_wick_pct,Price Structure,Upper wick as % of range,Safe: uses current OHLC only
+lower_wick_pct,Price Structure,Lower wick as % of range,Safe: uses current OHLC only
+range_pct,Price Structure,Range as % of close,Safe: uses current OHLC only
+gap_pct,Price Structure,Gap from prev close (%),Safe: uses open[0] vs close[-1]
+dist_ema_N,Trend,Distance from EMA_N (%),Safe: EMA uses past data only
+ema_N_slope,Trend,EMA_N slope (%),Safe: uses past EMA values
+ema_A_B_ratio,Trend,EMA ratio short/long (%),Safe: both EMAs use past data
+atr,Volatility,ATR (absolute),Safe: uses past H/L/C
+atr_pct,Volatility,ATR as % of close,Safe: uses past H/L/C
+vol_std_N,Volatility,Rolling std of returns (%),Safe: uses past returns
+vol_ratio,Volatility,Short/long vol ratio,Safe: both use past data
+atr_ratio,Volatility,ATR ratio short/long,Safe: both use past data
+rsi_N,Momentum,RSI_N,Safe: uses past close only
+roc_N,Momentum,Rate of Change_N (%),Safe: uses close[0] vs close[-N]
+bb_position,Bands,Bollinger position (0-100),Safe: uses past close for BB
+bb_width_pct,Bands,Bollinger width (%),Safe: uses past close for BB
+donchian_position,Bands,Donchian position (0-100),Safe: uses past H/L
+donchian_width_pct,Bands,Donchian width (%),Safe: uses past H/L
+adx,Trend Strength,ADX,Safe: uses past H/L/C
+plus_di,Trend Strength,+DI,Safe: uses past H/L/C
+minus_di,Trend Strength,-DI,Safe: uses past H/L/C
+di_diff,Trend Strength,+DI - -DI,Safe: derived from past DI
+di_ratio,Trend Strength,+DI / -DI ratio,Safe: derived from past DI
+dist_high_N,Breakout,Dist from N-bar high (%),Safe: uses past high
+dist_low_N,Breakout,Dist from N-bar low (%),Safe: uses past low
+breakout_high_N,Breakout,New N-bar high (0/1),Safe: compares to past
+breakout_low_N,Breakout,New N-bar low (0/1),Safe: compares to past
+hour_sin,Time,Hour (sin encoding),Safe: deterministic from timestamp
+hour_cos,Time,Hour (cos encoding),Safe: deterministic from timestamp
+dow_sin,Time,Day of week (sin),Safe: deterministic from timestamp
+dow_cos,Time,Day of week (cos),Safe: deterministic from timestamp
+session_london,Time,London session (0/1),Safe: deterministic from timestamp
+session_ny,Time,NY session (0/1),Safe: deterministic from timestamp
+session_asia,Time,Asia session (0/1),Safe: deterministic from timestamp
+session_overlap,Time,London+NY overlap (0/1),Safe: deterministic from timestamp
+vol_ratio_sma,Volume,Volume / SMA20 volume,Safe: uses past volume
+vol_ratio_long,Volume,Volume / SMA50 volume,Safe: uses past volume
+vol_trend,Volume,Volume trend (%),Safe: uses past volume
+atr_percentile,Regime,ATR percentile rank,Safe: uses past ATR
+adx_percentile,Regime,ADX percentile rank,Safe: uses past ADX
+consecutive_up,Structure,Consecutive up bars,Safe: uses past direction
+consecutive_down,Structure,Consecutive down bars,Safe: uses past direction
+dist_sma200,Trend,Distance from SMA200 (%),Safe: uses past close

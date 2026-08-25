@@ -1,0 +1,38 @@
+{
+  "strategy": "Regime-Adaptive XGBoost",
+  "config": {
+    "rt": 0.65,
+    "ct": 0.1,
+    "tt": 0.55,
+    "sl": 2.0,
+    "tp": 2.5,
+    "risk": 0.01,
+    "vsk": true
+  },
+  "oos_period": "2026-07-01 to 2026-08-25",
+  "oos_metrics": {
+    "total_return_pct": 185.21,
+    "profit_factor": 2.38,
+    "win_rate": 0.674,
+    "max_drawdown_pct": 7.08,
+    "total_trades": 227,
+    "final_equity": 28521.01
+  },
+  "is_period": "2024-08-01 to 2026-06-30",
+  "is_metrics": {
+    "total_return_pct": 18278.05,
+    "total_trades": 1813
+  },
+  "model_oos_auc": {
+    "vol_regime": 0.8591808894194845,
+    "future_range": 0.7808842716132435,
+    "large_candle": 0.7760428685612578,
+    "trend_regime": 0.9764599109831004
+  },
+  "models": [
+    "vol_regime",
+    "future_range",
+    "large_candle",
+    "trend_regime"
+  ]
+}

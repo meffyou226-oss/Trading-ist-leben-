@@ -1,0 +1,124 @@
+{
+  "description": "All validated strategy configurations. Choose based on your preference for PF vs trade frequency.",
+  "oos_period": "2026-07-01 to 2026-08-25 (~55 days)",
+  "strategies": {
+    "ultra_pf": {
+      "name": "Ultra High PF",
+      "description": "Maximum selectivity, fewest trades. Best for capital preservation.",
+      "config": {
+        "rt": 0.72,
+        "ct": 0.08,
+        "tt": 0.50,
+        "sl": 1.5,
+        "tp": 3.0,
+        "risk": 0.02,
+        "vsk": true,
+        "session_filter": "no_asian"
+      },
+      "oos_results": {
+        "profit_factor": 7.10,
+        "win_rate": 0.77,
+        "max_drawdown_pct": 4.2,
+        "trades_per_day": 1.0,
+        "total_trades": 57,
+        "total_return_pct": 300.3
+      }
+    },
+    "high_pf_freq": {
+      "name": "High PF + Frequency",
+      "description": "Best balance: PF>3 with 2+ trades/day. Recommended default.",
+      "config": {
+        "rt": 0.65,
+        "ct": 0.08,
+        "tt": 0.50,
+        "sl": 1.0,
+        "tp": 2.5,
+        "risk": 0.02,
+        "vsk": true,
+        "session_filter": "no_asian",
+        "reentry_wait": 0
+      },
+      "oos_results": {
+        "profit_factor": 3.08,
+        "win_rate": 0.56,
+        "max_drawdown_pct": 10.6,
+        "trades_per_day": 2.0,
+        "total_trades": 111,
+        "total_return_pct": 469.8
+      }
+    },
+    "balanced": {
+      "name": "Balanced",
+      "description": "Good PF with moderate frequency. Lower DD than high_pf_freq.",
+      "config": {
+        "rt": 0.65,
+        "ct": 0.10,
+        "tt": 0.50,
+        "sl": 1.0,
+        "tp": 2.5,
+        "risk": 0.01,
+        "vsk": true,
+        "session_filter": "no_asian"
+      },
+      "oos_results": {
+        "profit_factor": 2.79,
+        "win_rate": 0.55,
+        "max_drawdown_pct": 5.2,
+        "trades_per_day": 3.0,
+        "total_trades": 164,
+        "total_return_pct": 272.1
+      }
+    },
+    "high_freq": {
+      "name": "High Frequency",
+      "description": "Most trades with solid PF. For active traders.",
+      "config": {
+        "rt": 0.65,
+        "ct": 0.20,
+        "tt": 0.50,
+        "sl": 1.5,
+        "tp": 2.5,
+        "risk": 0.01,
+        "vsk": true,
+        "session_filter": "all"
+      },
+      "oos_results": {
+        "profit_factor": 2.67,
+        "win_rate": 0.64,
+        "max_drawdown_pct": 6.2,
+        "trades_per_day": 7.1,
+        "total_trades": 391,
+        "total_return_pct": 475.0
+      }
+    },
+    "baseline": {
+      "name": "Baseline (Original)",
+      "description": "Original frequency-optimized config. Simple and robust.",
+      "config": {
+        "rt": 0.65,
+        "ct": 0.10,
+        "tt": 0.55,
+        "sl": 2.0,
+        "tp": 2.5,
+        "risk": 0.01,
+        "vsk": true,
+        "session_filter": "all"
+      },
+      "oos_results": {
+        "profit_factor": 2.35,
+        "win_rate": 0.67,
+        "max_drawdown_pct": 7.1,
+        "trades_per_day": 4.1,
+        "total_trades": 226,
+        "total_return_pct": 181.8
+      }
+    }
+  },
+  "comparison": {
+    "highest_pf": "ultra_pf (7.10)",
+    "best_balance": "high_pf_freq (PF=3.08, 2.0 T/D)",
+    "lowest_dd": "ultra_pf (4.2%)",
+    "most_trades": "high_freq (7.1 T/D)",
+    "best_risk_adjusted": "ultra_pf (PF/DD = 1.69)"
+  }
+}

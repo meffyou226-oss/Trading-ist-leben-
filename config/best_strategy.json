@@ -1,11 +1,13 @@
 {
-  "description": "Frequency-optimized: 2-10 trades/day",
+  "active_strategy": "high_pf_freq",
+  "description": "Recommended: Best balance of PF (3.08) and trade frequency (2.0/day)",
   "rt": 0.65,
-  "ct": 0.10,
+  "ct": 0.08,
   "tt": 0.50,
   "sl": 1.0,
   "tp": 2.5,
-  "risk": 0.01,
+  "risk": 0.02,
   "vsk": true,
-  "session_filter": "no_asian"
+  "session_filter": "no_asian",
+  "reentry_wait": 0
 }
